@@ -1,8 +1,10 @@
 package Persistencia.DAO;
 
 import Model.User;
-import org.hibernate.Query;
 import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Martin Alejandro on 29/08/2015.
@@ -10,11 +12,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserDAO{
 
+    Map<Long, User> users;
+
     public UserDAO() {
-        System.out.println("Trabajando o k ase");
+        this.users = new HashMap<Long, User>();
     }
 
     public User load(Long id) {
-        return new User();
+        return this.users.get(id);
     }
+    public void save(User user) {
+        this.users.put(user.getId(), user);
+    }
+
 }

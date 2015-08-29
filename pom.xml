@@ -11,7 +11,6 @@
 
     <properties>
         <struts.version>2.3.8</struts.version>
-        <hibernate.version>4.1.9.Final</hibernate.version>
         <postgresql.version>9.1-901.jdbc4</postgresql.version>
         <spring.version>4.1.6.RELEASE</spring.version>
     </properties>
@@ -35,24 +34,6 @@
             <version>1.2</version>
         </dependency>
         <!-- FINN PRESENTACION-->
-
-        <!-- PERSISTENCIA-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-ehcache</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${postgresql.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-c3p0</artifactId>
-            <version>${hibernate.version}</version>
-        </dependency>
-        <!-- FIN PERSISTENCIA-->
         <!-- SERVICIOS-->
         <dependency>
             <groupId>org.springframework</groupId>

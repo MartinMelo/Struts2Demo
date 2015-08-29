@@ -6,21 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by Martin Alejandro on 29/08/2015.
+ * Created by Martin Alejandro Melo
+ * on 29/08/2015.
  */
 @Component
-public class UserService {
+public class RegistrationService {
 
     @Autowired
     private UserDAO userDAO;
 
-    public UserService() {
-        System.out.println("UserService Initialized");
+    public RegistrationService() {
+        System.out.println("RegistrationService Initialized");
     }
 
-    //@Transactional
-    public User loadUser(Long id){
-        return userDAO.load(id);
+    public void registrarUsuario(User user) {
+        this.userDAO.save(user);
     }
 
     //GETTERS && SETTERS

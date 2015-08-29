@@ -19,32 +19,23 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="JS/jquery-1.7.1.min.js"></script>
     <script src="JS/bootstrap/bootstrap.min.js"></script>
-    <script src="JS/login.js"></script>
-    <title>Struts 2 Demo - Login</title>
+    <title>Struts 2 Demo - Register</title>
 </head>
 <body class="logBox">
 <div class="container">
     <div class="row logBox">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <h1 class="text-center login-title">Struts 2 Demo</h1>
-            <h1 class="text-center login-title">Login</h1>
+            <h1 class="text-center login-title">Register</h1>
             <div class="account-wall">
                 <div id="imagen">
                     <img class="profile-img" id="imagenPerfil" src="Images/usuarios/default.jpg" alt="">
                 </div>
                 <form class="form-signin">
-                    <input type="text" name="userName" id="userName" class="form-control" onchange="cambiarImagen()" placeholder="Username" required autofocus>
+                    <input type="text" name="userName" id="userName" class="form-control" placeholder="Username" required autofocus>
                     <input type="password" name="password" class="form-control" placeholder="Password" required>
-                    <button class="btn btn-lg btn-success btn-block" type="submit" formaction="registrarSesion" formmethod="post">
+                    <button class="btn btn-lg btn-success btn-block" type="submit" formaction="registerUser" formmethod="post">
                         Login</button>
-                    <label class="checkbox pull-left">
-                        <input type="checkbox" value="remember-me">
-                        Recordame
-                    </label>
-                    <label class="checkbox pull-left">
-                        <input type="button" id="cancelar" value="Registrarme"
-                               onclick="window.location='register.jsp'"/>
-                    </label>
                 </form>
             </div>
 
