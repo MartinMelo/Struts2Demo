@@ -35,7 +35,7 @@
                     <input type="text" name="userName" id="userName" class="form-control" placeholder="Username" required autofocus>
                     <input type="password" name="password" class="form-control" placeholder="Password" required>
                     <button class="btn btn-lg btn-success btn-block" type="submit" formaction="registerUser" formmethod="post">
-                        Login</button>
+                        Registrar</button>
                 </form>
             </div>
 

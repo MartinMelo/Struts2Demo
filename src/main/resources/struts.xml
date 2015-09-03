@@ -24,7 +24,6 @@
                 <interceptor-ref name="prepare"/>
                 <interceptor-ref name="chain"/>
                 <interceptor-ref name="fileUpload"/>
-                <interceptor-ref name="params"/>
                 <interceptor-ref name="conversionError"/>
                 <interceptor-ref name="validation"/>
                 <interceptor-ref name="workflow"/>
@@ -43,7 +42,12 @@
             <result name="success">home.jsp</result>
         </action>
         <action name="registerUser" class="UI.Actions.RegisterAction" method="registrar">
+            <interceptor-ref name="basicStack"/>
             <result name="success">login.jsp</result>
+        </action>
+        <action name="ListaDeUsuarios" class="UI.Actions.UserAction" method="listaDeUsuarios">
+            <interceptor-ref name="basicStack"/>
+            <result name="success">listaDeUsuarios.jsp</result>
         </action>
     </package>
 </struts>

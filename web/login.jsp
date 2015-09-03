@@ -41,16 +41,16 @@
                         <input type="checkbox" value="remember-me">
                         Recordame
                     </label>
-                    <label class="checkbox pull-left">
-                        <input type="button" id="cancelar" value="Registrarme"
-                               onclick="window.location='register.jsp'"/>
-                    </label>
                 </form>
             </div>
 
         </div>
     </div>
 </div>
+<label class="checkbox pull-left">
+    <input class="btn btn-lg btn-warning btn-block" type="button" value="Registrarme"
+           onclick="window.location='register.jsp'"/>
+</label>
 
 
 </body>
